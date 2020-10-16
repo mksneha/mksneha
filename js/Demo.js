@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.demo .reset', function (e) {
         e.preventDefault();
-        $('#color').attr('href', 'css/colors/yellow.css');
+        $('#color').attr('href', 'css/colors/green.css');
         $('html').removeClass('boxed');
         $('body').removeAttr('style');
         $.removeCookie('color', { path: '/' });
@@ -53,8 +53,9 @@ $(document).ready(function () {
 
     var html = '' +
         '<div class="demo">' +
-        '<a href="#" class="settings">' +
-        '<i class="fa fa-cog fa-spin"></i>' +
+        // '<a href="#" class="settings">' +
+        '<i class="fa fa-cog fa-spin"></i>'
+         +
         '</a>' +
         '<h5>SELECT A COLOR</h5>' +
         '<a href="#" class="color" data-color="yellow.css" style="background-color:#ffb100"></a>' +
